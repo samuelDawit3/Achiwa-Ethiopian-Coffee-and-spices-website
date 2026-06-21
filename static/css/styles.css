@@ -1,0 +1,198 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #FAF3E0; /* Cream background */
+    color: #333333; /* Dark gray text */
+}
+
+header, footer {
+    background-color: #6F4E37; /* Coffee brown for header/footer */
+    color: white;
+    padding: 5px 20px; /* Reduce padding for a smaller navbar */
+}
+
+header, .navbar {
+    padding: 2px 20px; /* Reduce padding for a tighter fit */
+    min-height: 50px; /* Reduce the minimum height of the navbar */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    height: 50px; /* Adjust logo size to fit the tighter navbar */
+}
+
+.navbar {
+    min-height: 60px; /* Set a smaller minimum height for the navbar */
+    transition: background-color 0.3s ease, min-height 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #5a3e2b; /* Slightly darker coffee brown on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F4A261; /* Spice orange for hover */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2A9D8F; /* Teal green for buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1E7A6A; /* Darker teal for hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2A9D8F; /* Teal green for buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1E7A6A; /* Darker teal for hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.hero {
+    background-color: #6F4E37; /* Coffee brown for hero section */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero .cta-button {
+    margin-top: 20px;
+}
+
+.hero img {
+    width: 100%; /* Ensure the image spans the full width of the section */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Limit the maximum height for better fitting */
+    object-fit: cover; /* Ensure the image covers the section without distortion */
+    border-radius: 10px; /* Optional: Add rounded corners for a polished look */
+}
+
+/* Buttons with logos */
+.logo-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #2A9D8F; /* Teal green for logo buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.logo-button img {
+    height: 20px;
+    width: 20px;
+}
+
+.logo-button:hover {
+    background-color: #1E7A6A; /* Darker teal for hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Section fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero, .about-us, .mission-vision, .products, .contact {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Scroll animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-animate {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start position */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* End position */
+}

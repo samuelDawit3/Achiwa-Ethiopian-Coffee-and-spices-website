@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero text-center py-5 scroll-animate">
+    <img src="{{ url_for('static', filename='images/coffee-spice-farm.jpg') }}" class="img-fluid mb-4" alt="A breathtaking view of the lush coffee and spice farm in Kaffa">
+    <h1 class="display-4 fw-bold">From the Heart of Kaffa to the World</h1>
+    <a href="{{ url_for('products') }}" class="btn btn-primary btn-lg mt-3 d-inline-flex align-items-center">
+        <i class="fas fa-coffee me-2"></i>
+        Explore Our Products
+    </a>
+</section>
+
+<section class="about-us py-5 scroll-animate">
+    <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="text-center">
+            Established in 2010 (2002 EC), Achiwa Coffee and Spice Development and Agro-processing PLC is based in the lush highlands of Achiwa Kebele, Gewata District, Kaffa Zone, Ethiopia—just outside Konda Town, and in the very cradle of Arabica coffee. With 96 hectares of fertile land, we are dedicated to cultivating, processing, and exporting premium Ethiopian coffee and high-quality spices to international markets.
+        </p>
+        <p class="text-center">
+            Our unique location in the biodiverse forests of Kaffa allows us to grow coffee and spices in their ideal natural habitat—under a canopy of native trees, nourished by organic matter, and untouched by synthetic chemicals. This natural advantage, combined with our commitment to ethical practices and quality standards, sets Achiwa apart as a leader in sustainable agro-processing.
+        </p>
+        <p class="text-center">
+            What began with coffee has grown into a diversified agricultural venture, now including black pepper, turmeric, ginger, and vanilla, all cultivated with the same care and attention to detail that defines our coffee production. We proudly combine traditional farming knowledge with modern processing techniques, ensuring our products meet the expectations of health-conscious, quality-driven consumers around the world.
+        </p>
+        <p class="text-center">
+            We are more than just a farming business—we are stewards of the land, partners to local farmers, and ambassadors of Ethiopian agricultural excellence.
+        </p>
+    </div>
+</section>
+
+<section class="mission-vision py-5 scroll-animate">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <article class="card">
+                    <div class="card-body">
+                        <h2 class="card-title d-inline-flex align-items-center">
+                            <i class="fas fa-bullseye me-2"></i>
+                            Our Mission
+                        </h2>
+                        <p class="card-text">
+                            To share Ethiopia’s rich coffee and spice heritage with the world through sustainable farming, ethical trade, and uncompromising quality.
+                        </p>
+                        <ul>
+                            <li>Preserve Ethiopia’s agricultural legacy by cultivating indigenous coffee varieties and traditional spices that reflect centuries of cultural heritage.</li>
+                            <li>Promote sustainability by using environmentally friendly farming methods that protect the soil, conserve biodiversity, and reduce our ecological footprint.</li>
+                            <li>Practice ethical trade by ensuring fair wages, safe working conditions, and inclusive partnerships with local farmers and communities.</li>
+                            <li>Deliver quality without compromise, ensuring every bean and spice we produce undergoes strict quality control, traceability, and international standards compliance.</li>
+                            <li>Build lasting relationships with global partners who value transparency, authenticity, and sustainability in the supply chain.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="card">
+                    <div class="card-body">
+                        <h2 class="card-title d-inline-flex align-items-center">
+                            <i class="fas fa-eye me-2"></i>
+                            Our Vision
+                        </h2>
+                        <p class="card-text">
+                            To be a globally recognized Ethiopian agro-business that uplifts local communities while delivering exceptional coffee and spice products to international markets.
+                        </p>
+                        <ul>
+                            <li>Becoming a trusted international brand synonymous with excellence in Ethiopian coffee and spices, recognized for our authenticity, integrity, and consistent quality.</li>
+                            <li>Creating meaningful impact by providing sustainable jobs, skills development, and market access to farmers and youth in Kaffa and beyond.</li>
+                            <li>Fostering rural development through reinvestment in community infrastructure, education, and agricultural innovation.</li>
+                            <li>Expanding our reach to new markets and product lines while remaining rooted in our values and our land.</li>
+                            <li>Setting new standards in agro-processing by embracing cutting-edge technologies, certifications, and traceability systems that ensure our customers receive products they can trust.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
